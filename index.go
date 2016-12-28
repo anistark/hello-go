@@ -6,7 +6,7 @@ import (
 )
 
 func hello(w http.ResponseWriter, r *http.Request) {
-	io.WriteString(w, "Hello world!")
+	io.WriteString(w, "Hello Go!")
 }
 
 var mux map[string]func(http.ResponseWriter, *http.Request)
@@ -31,5 +31,5 @@ func (*myHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	io.WriteString(w, "My server: "+r.URL.String())
+	io.WriteString(w, "404 :: Your Route: "+r.URL.String()+" does not exist")
 }
