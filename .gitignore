@@ -22,3 +22,13 @@ _testmain.go
 *.exe
 *.test
 *.prof
+
+# Idea Files
+.idea
+
+# Misc Files
+*.rdb
+
+
+
+

@@ -9,6 +9,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 	io.WriteString(w, "Hello Go!")
 }
 
+
 var mux map[string]func(http.ResponseWriter, *http.Request)
 
 func main() {
